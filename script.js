@@ -1,4 +1,4 @@
-let api=`https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_fMaVt1lC70nE5KRcGQ1dw7ea4QDOd4Ku8Zly4jHn`;   
+let api=;
 
 
 const fromDropDown=document.getElementById("from-currency-select");
