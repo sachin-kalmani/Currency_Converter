@@ -1,5 +1,5 @@
-let api=`https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_fMaVt1lC70nE5KRcGQ1dw7ea4QDOd4Ku8Zly4jHn`;   
-
+//Paste Your api url with the key and run it or else it will not run properly.
+let api=``;   
 
 const fromDropDown=document.getElementById("from-currency-select");
 const toDropDown=document.getElementById("to-currency-select");
@@ -23,10 +23,16 @@ let convertCurrency=()=>{
    const amount=document.querySelector("#amount").value;
    const fromCurrency=fromDropDown.value;
    const toCurrency=toDropDown.value;
+
+    //Ajax object is creates
     var xhr=new XMLHttpRequest();
+    //sending the request to the api 
     xhr.open("GET",api,true);
     xhr.send()
+
+    //checking the status of the response
     xhr.onreadystatechange=function(){
+        //check the status
         if(xhr.readyState==4)
         {
             var jsonData=JSON.parse(xhr.responseText);
